@@ -21,6 +21,5 @@ public class CategoryService {
   public void delete(UUID id) {
     Category category = Category.findById(id);
     category.exclude();
-    category.persist();
   }
 }

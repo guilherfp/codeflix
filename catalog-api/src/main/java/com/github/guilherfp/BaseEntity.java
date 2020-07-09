@@ -36,6 +36,7 @@ public class BaseEntity extends PanacheEntityBase {
 
   public void exclude() {
     this.excluded = true;
+    this.persist();
   }
 
   @Override
